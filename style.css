@@ -1,0 +1,175 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --FontContrailOne: 'Contrail One', cursive;
+    --FontFamiljenGrotesk: 'Familjen Grotesk', sans-serif;
+    --cor1: #E8F1F2;
+    --cor2: #B3EFB2;
+    --cor3: #7A9E7E;
+    --cor4: #31493C;
+    --cor5: #001A23;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: var(--cor1);
+    color: white;
+    padding: 50px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--FontContrailOne);
+    font-weight: normal;
+    font-size: 3em;
+}
+
+div#container-corpo {
+    background-color:var(--cor4);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 10px 0px 10px;
+}
+
+nav {
+    background-color: var(--cor1);
+    width: 200px;
+    border-radius: 15px 0px 0px 0px;
+    
+}
+
+div#container-corpo > nav > ul {
+    margin-top: 20px;
+}
+
+div#container-corpo > nav > ul > a {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+div#container-corpo > nav > ul > a > li {
+    background-color: var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 7px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.144);
+}
+
+div#container-corpo li:hover {
+    background-color: var(--cor4);
+    transition: 0.4s;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 20px 0px 0px;
+}
+
+section#container-conteudo {
+    background-color: rgb(255, 255, 255);
+    max-width: 1080px;
+    min-width: 100px;
+    padding: 20px;
+    border-radius: 0px 15px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#container-conteudo > p {
+    font-family: var(--FontFamiljenGrotesk);
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 20px;
+    padding: 0px 0px 20px 0px;
+}
+
+section#container-conteudo > a {
+    text-decoration: none;
+}
+
+section#container-conteudo > a > div {
+    background-color: #7A9E7E;
+    color: white;
+    width: 343px;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.144);
+}
+
+section#container-conteudo > a > div:hover {
+    background-color: var(--cor4);
+    transition: 0.4s;
+}
+
+section#container-conteudo > a > div > h2 {
+    padding-bottom: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    div#container-corpo {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    nav {
+        text-align: center;
+        width: auto;
+        border-radius: 0px;
+        
+    }
+
+    div#container-corpo {
+        padding-top: 0px;
+    }
+
+    div#container-corpo > nav > ul {
+        margin-top: 0px;
+    }
+
+
+    div#container-corpo > nav > ul > a > li {
+        display: inline-block;
+        width: 20%;
+    }
+
+    section#container-conteudo {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    div#container-corpo > nav > ul > a > li {
+        width: 80%;
+    }
+}
+
